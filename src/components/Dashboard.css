@@ -1,0 +1,69 @@
+/* Dashboard.css */
+
+/* Container styling */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+    background-color: #f4f7fa;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .dashboard-title {
+    font-size: 2.5em;
+    color: #3a3f58;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styling the links list */
+  .dashboard-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .dashboard-links li {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .dashboard-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 8px;
+    background-color: #5eff00a3;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .dashboard-links a:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 86, 179, 0.3);
+    transform: translateY(-3px);
+  }
+  
+  .dashboard-links a:active {
+    background-color: #003e7e;
+    box-shadow: none;
+    transform: translateY(1px);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .dashboard-links {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .dashboard-title {
+      font-size: 2em;
+    }
+  }
+  

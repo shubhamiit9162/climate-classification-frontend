@@ -1,0 +1,63 @@
+/* Container for the data upload form */
+.data-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 500px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .data-upload-container h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Styling for the input file selector */
+  .data-upload-container input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: 2px dashed #b0bec5;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fff;
+    color: #616161;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+  .data-upload-container input[type="file"]:hover {
+    border-color: #607d8b;
+  }
+  
+  /* Styling for the upload button */
+  .data-upload-container button {
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .data-upload-container button:hover {
+    background-color: #1565c0;
+    transform: translateY(-2px);
+  }
+  
+  .data-upload-container button:active {
+    background-color: #0d47a1;
+    transform: translateY(0);
+  }
+  

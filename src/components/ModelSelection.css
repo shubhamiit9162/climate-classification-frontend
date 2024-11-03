@@ -1,0 +1,65 @@
+/* ModelSelection.css */
+
+.model-selection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the items */
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    background-color: #f9f9f9; /* Light background color */
+    transition: box-shadow 0.3s ease;
+}
+
+.model-selection-container:hover {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.model-select {
+    width: 200px; /* Fixed width for consistency */
+    padding: 10px;
+    margin-bottom: 20px; /* Space below the select */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px;
+    font-size: 16px; /* Slightly larger font */
+    transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+.model-select:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.run-model-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Adjust padding */
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.run-model-button:disabled {
+    background-color: #6c757d; /* Disable button color */
+    cursor: not-allowed; /* Change cursor when disabled */
+}
+
+.run-model-button:not(:disabled):hover {
+    background-color: #0056b3; /* Darken button on hover */
+}
+
+.running-feedback {
+    margin-top: 10px; /* Space above feedback text */
+    font-size: 14px; /* Smaller font for feedback */
+    color: #666; /* Subtle text color */
+}
